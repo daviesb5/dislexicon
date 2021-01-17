@@ -5,116 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dislexicon | 1st Grade Spelling</title>
-    <script type="module" src="js/mario-layout.js"></script>
+    <script type="module" src="demo.js"></script>
     <!-- <script src="js/game-00.js"></script> -->
-
-    <!-- Based on src="js/mario-layout.js" -->
-    <script type="module">
-        function loadImage(url) {
-            return new Promise(resolve => {
-                const image = new Image();
-                image.addEventListener('load', () => {
-                    resolve(image);
-                });
-                image.src = url;
-            });
-        }
-
-        const canvas = document.getElementById('game-screen');
-        const context = canvas.getContext('2d');
-
-        context.fillRect(0, 0, 1200, 700);
-
-        // Platform pieces
-        loadImage('img/tiles/platforms/png/platform-1.png').then(image => {
-            context.drawImage(image, 0, 600);
-            context.drawImage(image, 100, 600);
-            context.drawImage(image, 200, 600);
-            context.drawImage(image, 300, 600);
-            context.drawImage(image, 400, 600);
-            context.drawImage(image, 500, 600);
-            context.drawImage(image, 600, 600);
-            context.drawImage(image, 700, 600);
-            context.drawImage(image, 800, 600);
-            context.drawImage(image, 900, 600);
-            context.drawImage(image, 1000, 600);
-            context.drawImage(image, 1100, 600);
-        });
-        // Svenja
-        loadImage('img/sprites/svenja/left_000.png').then(image => {
-            context.drawImage(image, 800, 353);
-        });
-        // Stairs
-        loadImage('img/tiles/letter-blocks/png/filler-tile-0.png').then(image => {
-            context.drawImage(image, 0, 100);
-        });
-        loadImage('img/tiles/letter-blocks/png/letter-i.png').then(image => {
-            context.drawImage(image, 0, 200);
-            context.drawImage(image, 0, 300);
-            context.drawImage(image, 100, 400);
-        });
-        loadImage('img/tiles/letter-blocks/png/letter-n.png').then(image => {
-            context.drawImage(image, 100, 200);
-            context.drawImage(image, 100, 300);
-            context.drawImage(image, 200, 400);
-        });
-        loadImage('img/tiles/letter-blocks/png/letter-k.png').then(image => {
-            context.drawImage(image, 200, 300);
-            context.drawImage(image, 300, 400);
-        });
-        loadImage('img/tiles/letter-blocks/png/letter-r.png').then(image => {
-            context.drawImage(image, 0, 400);
-        });
-
-        loadImage('img/tiles/letter-blocks/png/0-blank-tile.png').then(image => {
-            context.drawImage(image, 0, 500);
-            context.drawImage(image, 100, 500);
-            context.drawImage(image, 200, 500);
-            context.drawImage(image, 300, 500);
-            context.drawImage(image, 400, 500);
-        });
-        
-        /*
-        loadImage('img/tiles/letter-blocks/png/filler-tile-0.png').then(image => {
-            context.drawImage(image, 0, 100);
-        });
-        loadImage('img/tiles/letter-blocks/png/0-blank-tile.png').then(image => {
-            context.drawImage(image, 0, 200);
-            context.drawImage(image, 100, 200);
-        });
-        loadImage('img/tiles/letter-blocks/png/0-blank-tile.png').then(image => {
-            context.drawImage(image, 0, 300);
-            context.drawImage(image, 100, 300);
-            context.drawImage(image, 200, 300);
-        });
-        loadImage('img/tiles/letter-blocks/png/0-blank-tile.png').then(image => {
-            context.drawImage(image, 0, 400);
-            context.drawImage(image, 100, 400);
-            context.drawImage(image, 200, 400);
-            context.drawImage(image, 300, 400);
-        });
-        loadImage('img/tiles/letter-blocks/png/0-blank-tile.png').then(image => {
-            context.drawImage(image, 0, 500);
-            context.drawImage(image, 100, 500);
-            context.drawImage(image, 200, 500);
-            context.drawImage(image, 300, 500);
-            context.drawImage(image, 400, 500);
-        });
-        */
-        // loadImage('img/tiles/bg/png/greek-city.png').then(image => {
-        //     context.drawImage(image, 100, 100);
-        // })
-    </script>
 </head>
 
 <body>
     <section id="main-sec">
         <h1>Dislexicon: 1st Grade Spelling</h1>
-        <p>Svenja explores the ancient Greek ruins. Spell the words to rebuild broken stairways.</p>
-        <canvas id="game-screen" width="1200" height="700"></canvas>
+        <p>Ophelia explores the ancient Greek ruins. Spell the words to rebuild broken stairways.</p>
+        <!-- <canvas id="game-screen" width="1200" height="700"></canvas>
         <canvas id="game-bg" width="1200" height="700"></canvas>
-        <!-- <img src="img/bg/png/greek-city.png" alt="Ancient Greek bg"> -->
-        </canvas>
+        <img src="img/bg/jpeg/taormina-theater-2.jpg" alt="Ancient Greek bg">
+        </canvas> -->
+        <div class="grid-layout">
+            <!-- Game Content Goes Here -->
+        </div>
         <div id="typing">
             <div class="textboxes">
                 <h3>Spell the word...</h3>
